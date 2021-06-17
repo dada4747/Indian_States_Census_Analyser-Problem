@@ -95,14 +95,19 @@ public class CensusAnalyserTest {
     public void givenIndiaStateCode_whenDelimiterIncorrect_shouldThrowException() {
         try{
             CensusAnalyser censusAnalyser = new CensusAnalyser();
-           censusAnalyser.loadIndiaCensusData(FILE_PATH_DELIMITER);
+           censusAnalyser.loadIndiaStateCode(FILE_PATH_DELIMITER);
         }catch(CensusAnalyserException  e){
             Assert.assertEquals(CensusAnalyserException.ExceptionType.NOT_A_CSV_TYPE,e.type);
         }
     }
-
-
-
-
+    @Test
+    public void givenIndiaStateCode_WhenHeaderIncorrect_ShouldThrowException() {
+        try{
+            CensusAnalyser censusAnalyser = new CensusAnalyser();
+            censusAnalyser.loadIndiaStateCode(FILE_PATH_HEADER);
+        }catch(CensusAnalyserException  e){
+            Assert.assertEquals(CensusAnalyserException.ExceptionType.NOT_A_CSV_TYPE,e.type);
+        }
+    }
 
 }
