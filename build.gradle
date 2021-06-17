@@ -10,12 +10,12 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'junit:junit:4.13.1'
     compile 'com.google.code.gson:gson:2.2.+'
     compile "com.opencsv:opencsv:4.0"
 }
+/*
 
 test {
     useJUnitPlatform()
-}
+}*/
