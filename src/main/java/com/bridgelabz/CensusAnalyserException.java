@@ -3,7 +3,7 @@ package com.bridgelabz;
 public class CensusAnalyserException extends Exception {
 
     enum ExceptionType {
-        CENSUS_FILE_PROBLEM
+        UNABLE_TO_PARSE, CENSUS_FILE_PROBLEM, HEADERS_INVALID, NOT_A_CSV_TYPE
     }
 
     ExceptionType type;
