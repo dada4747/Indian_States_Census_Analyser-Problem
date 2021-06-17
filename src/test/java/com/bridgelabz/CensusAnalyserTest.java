@@ -91,6 +91,16 @@ public class CensusAnalyserTest {
             Assert.assertEquals(CensusAnalyserException.ExceptionType.NOT_A_CSV_TYPE, e.type);
         }
     }
+    @Test
+    public void givenIndiaStateCode_whenDelimiterIncorrect_shouldThrowException() {
+        try{
+            CensusAnalyser censusAnalyser = new CensusAnalyser();
+           censusAnalyser.loadIndiaCensusData(FILE_PATH_DELIMITER);
+        }catch(CensusAnalyserException  e){
+            Assert.assertEquals(CensusAnalyserException.ExceptionType.NOT_A_CSV_TYPE,e.type);
+        }
+    }
+
 
 
 
