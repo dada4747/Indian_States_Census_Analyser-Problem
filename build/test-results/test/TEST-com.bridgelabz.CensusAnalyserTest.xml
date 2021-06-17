@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.CensusAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-17T10:55:11" hostname="DESKTOP-4IPP4FC" time="0.017">
+<testsuite name="com.bridgelabz.CensusAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-17T11:05:14" hostname="DESKTOP-4IPP4FC" time="0.149">
   <properties/>
-  <testcase name="givenIndiaStateCode_withWrongFile_ShouldThrowException" classname="com.bridgelabz.CensusAnalyserTest" time="0.017"/>
+  <testcase name="givenIndiaStateCode_WhenWrongType_ShouldThrowException" classname="com.bridgelabz.CensusAnalyserTest" time="0.149"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
